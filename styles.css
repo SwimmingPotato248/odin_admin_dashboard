@@ -12,10 +12,6 @@ body {
   grid-template-rows: 1fr 2fr 2fr;
 }
 
-body > * {
-  border: 1px solid black;
-}
-
 #sidebar {
   grid-area: 1 / 1 / -1 / 2;
   display: flex;
@@ -57,9 +53,13 @@ body > * {
 
 #search-bar {
   padding-right: 100px;
+  display: flex;
+  align-items: center;
 }
 
 #search-bar form {
+  width: 100%;
+  height: 2rem;
   display: flex;
   gap: 1rem;
 }
@@ -163,8 +163,44 @@ body > * {
   grid-area: 2 / 3 / 3 / 4;
   display: flex;
   flex-direction: column;
+  background-color: lightgrey;
+  padding: 2rem 1rem;
+}
+
+#annoucements > p {
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#annoucement-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  gap: 2rem;
+  border-radius: 1rem;
 }
 
 #trending {
   grid-area: 3 / 3 / 4 / 4;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  padding: 2rem 1rem;
+}
+
+#trending > p {
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+#trending-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  gap: 2rem;
+  border-radius: 1rem;
 }
