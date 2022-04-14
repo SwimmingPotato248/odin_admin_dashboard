@@ -30,7 +30,7 @@ body > * {
 }
 
 #dashboard {
-  font-size: 28px;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 
@@ -50,19 +50,113 @@ body > * {
 #header {
   grid-area: 1 / 2 / 2 / 4;
   display: grid;
+  row-gap: 2rem;
   grid-template: 1fr 1fr / 3fr 2fr;
+  padding: 1rem 6rem 1rem 3rem;
+}
+
+#search-bar {
+  padding-right: 100px;
+}
+
+#search-bar form {
+  display: flex;
+  gap: 1rem;
+}
+
+#search-bar button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+#search-bar input {
+  border: none;
+  border-radius: 1rem;
+  background-color: lightgrey;
+  flex-grow: 1;
+}
+
+#greeting{
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+#greeting img {
+  height: 40px;
+  aspect-ratio: 1 / 1;
+}
+
+#greeting .user {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+#buttons button {
+  height: 2.5rem;
+  width: 6rem;
+  background-color: rgb(83, 128, 253);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 1rem;
+}
+
+#user {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 #content {
   grid-area: 2 / 2 / 4 / 3;
   display: flex;
   flex-direction: column;
+  background-color: lightgrey;
+  padding: 2rem;
+}
+
+#content > p {
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 #projects {
   flex: 1;
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 1rem;
+}
+
+.project {
+  background-color: white;
+  border-left: .5rem solid orange;
+  border-radius: .5rem;
+  padding: 1.5rem 1rem;
+  display: grid;
+  grid-template-rows: 1fr 40px;
+}
+
+.project .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.project .buttons button {
+  background-color: white;
+  border: none;
 }
 
 #annoucements {
